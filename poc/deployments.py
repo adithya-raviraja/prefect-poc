@@ -24,7 +24,7 @@ GITLAB_BRANCH = "main"
 def create_deployment():
     access_token = Secret.load('access-token')
     gitlab_source = GitRepository(url=GITHUB_URL, credentials={"access_token": access_token},
-                                    branch=GITLAB_BRANCH, name='async-tasks')
+                                    branch=GITLAB_BRANCH, name='async-tasks', pull_interval=15)
     for deployment in DEPLOYMENT_CONFIGS:
         try:
             flow = deployment['flow']
