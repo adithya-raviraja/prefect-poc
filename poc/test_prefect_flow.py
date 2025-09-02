@@ -6,6 +6,8 @@ def test_task_function(sleep_duration):
     logger = get_run_logger()
     logger.info("HI FROM THE TASK FUNCTION")
     sleep_for_a_while(sleep_duration)
+    from poc.sub_function import sleep_addtional
+    sleep_addtional(sleep_duration)
     return
 
 @flow
