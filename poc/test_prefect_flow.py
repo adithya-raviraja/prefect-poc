@@ -13,6 +13,6 @@ def test_task_function(sleep_duration):
 @flow
 def test_flow_functions(sleep_duration: int):
     logger = get_run_logger()
-    logger.info("HELLO and welcome FROM THE FLOW FUNCTION")
+    logger.info("HELLO@@@@@ and welcome FROM THE FLOW FUNCTION")
     test_task_function(sleep_duration)
     return

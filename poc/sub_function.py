@@ -11,6 +11,6 @@ def sleep_for_a_while(seconds: int):
 @task
 def sleep_addtional(seconds: int):
     logger = get_run_logger()
-    logger.info(f"Beginning Additional Sleeping for {seconds} seconds...")
+    logger.info(f"Beginning Second sleep Additional Sleeping for {seconds} seconds...")
     sleep(seconds)
-    logger.info(f"Completed Additional Slept for {seconds} seconds")
+    logger.info(f"Completed Seconds Sleep Additional Slept for {seconds} seconds")
